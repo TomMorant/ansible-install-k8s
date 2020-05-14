@@ -14,7 +14,8 @@
 192.168.31.63 etcd_name=etcd-3
 
 [lb]
-# 如果部署单Master，该项忽略
+# 如果部署单Master，该项忽略/
+# 如果是高可用集群，切记LB放到k8s集群外部
 192.168.31.63 lb_name=lb-master
 192.168.31.71 lb_name=lb-backup
 

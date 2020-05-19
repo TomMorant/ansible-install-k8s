@@ -17,7 +17,7 @@
 # 如果部署单Master，该项忽略/
 # 如果是高可用集群，切记LB放到k8s集群外部
 192.168.31.63 lb_name=lb-master
-192.168.31.71 lb_name=lb-backup
+#192.168.31.71 lb_name=lb-backup
 
 [k8s:children]
 master
@@ -25,4 +25,5 @@ node
 
 [newnode]
 #192.168.31.91 node_name=k8s-node3
+#192.168.31.92 node_name=k8s-node4
 
